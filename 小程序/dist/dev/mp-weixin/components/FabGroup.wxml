@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="fab-publish center press-scale data-v-8b2f17db" style="{{'right:' + b + ';' + ('bottom:' + c)}}" bindtap="{{d}}"><text class="fab-plus data-v-8b2f17db">＋</text></view><floating-assistant wx:if="{{e}}" class="data-v-8b2f17db" u-i="8b2f17db-0" bind:__l="__l" u-p="{{f}}"/>

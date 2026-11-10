@@ -1,0 +1,113 @@
+.body.data-v-9914b066 {
+  padding: 24rpx 32rpx 0;
+}
+.balance-card.data-v-9914b066 {
+  border-radius: 24rpx;
+  padding: 48rpx 32rpx;
+  display: flex;
+  flex-direction: column;
+}
+.balance-label.data-v-9914b066 {
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.85);
+}
+.balance-value.data-v-9914b066 {
+  font-size: 72rpx;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 12rpx;
+}
+.balance-footer.data-v-9914b066 {
+  margin-top: 32rpx;
+  padding-top: 24rpx;
+  border-top: 1rpx solid rgba(255, 255, 255, 0.25);
+}
+.balance-sub.data-v-9914b066 {
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.85);
+}
+.withdraw-btn.data-v-9914b066 {
+  padding: 12rpx 40rpx;
+  border-radius: 999rpx;
+  background-color: #ffffff;
+}
+.withdraw-text.data-v-9914b066 {
+  font-size: 27rpx;
+  color: #22c55e;
+  font-weight: 600;
+}
+.section-title.data-v-9914b066 {
+  font-size: 29rpx;
+  font-weight: 600;
+  color: #1f2937;
+}
+.tx-row.data-v-9914b066 {
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #f0f1f3;
+}
+.tx-type.data-v-9914b066 {
+  font-size: 27rpx;
+  color: #1f2937;
+}
+.tx-time.data-v-9914b066 {
+  font-size: 22rpx;
+  color: #9aa0a6;
+  margin-top: 6rpx;
+}
+.tx-right.data-v-9914b066 {
+  align-items: flex-end;
+}
+.tx-amount.data-v-9914b066 {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.change-up.data-v-9914b066 {
+  color: #22c55e;
+}
+.change-down.data-v-9914b066 {
+  color: #ef4444;
+}
+.tx-balance.data-v-9914b066 {
+  font-size: 21rpx;
+  color: #9aa0a6;
+  margin-top: 4rpx;
+}
+.wd-box.data-v-9914b066 {
+  width: 620rpx;
+  background-color: #ffffff;
+  border-radius: 32rpx;
+  padding: 48rpx;
+  display: flex;
+  flex-direction: column;
+}
+.wd-title.data-v-9914b066 {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #1f2937;
+}
+.wd-sub.data-v-9914b066 {
+  font-size: 25rpx;
+  color: #6b7280;
+  margin-top: 8rpx;
+}
+.wd-symbol.data-v-9914b066 {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #22c55e;
+  margin-right: 12rpx;
+}
+.wd-all.data-v-9914b066 {
+  font-size: 26rpx;
+  color: #22c55e;
+  font-weight: 600;
+  padding-left: 16rpx;
+}
+.wd-tip.data-v-9914b066 {
+  font-size: 22rpx;
+  color: #9aa0a6;
+  margin-top: 24rpx;
+  line-height: 1.6;
+}
+.input-ph.data-v-9914b066 {
+  color: #9aa0a6;
+}

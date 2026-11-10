@@ -1,0 +1,31 @@
+{
+  "name": "zhipao-admin-vtj",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "ts-check": "vue-tsc -b"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "axios": "^1.20.0",
+    "echarts": "^5",
+    "element-plus": "^2.14.7",
+    "pinia": "^3",
+    "vue": "^3.5.42",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vue/tsconfig": "^0.9.1",
+    "sass": "^1.105.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vue-tsc": "^3.3.11"
+  },
+  "description": "智跑校园运营管理后台（VTJ 风格版）"
+}

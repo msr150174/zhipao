@@ -1,0 +1,27 @@
+.doc.data-v-26151888 {
+  padding: 40rpx 40rpx 100rpx;
+  display: flex;
+  flex-direction: column;
+}
+.h1.data-v-26151888 {
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #1f2937;
+}
+.meta.data-v-26151888 {
+  font-size: 24rpx;
+  color: #9aa0a6;
+  margin-top: 12rpx;
+}
+.h2.data-v-26151888 {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 48rpx;
+}
+.p.data-v-26151888 {
+  font-size: 27rpx;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-top: 16rpx;
+}

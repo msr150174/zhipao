@@ -1,0 +1,102 @@
+.profile-wrap.data-v-9023ef44 {
+  padding: 0 32rpx;
+  margin-top: -40rpx;
+}
+.profile-card.data-v-9023ef44 {
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.06);
+}
+.avatar.data-v-9023ef44 {
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 50%;
+  background-color: #e8f8ee;
+  flex-shrink: 0;
+}
+.avatar-text.data-v-9023ef44 {
+  font-size: 56rpx;
+}
+.nickname.data-v-9023ef44 {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #1f2937;
+}
+.user-desc.data-v-9023ef44 {
+  font-size: 24rpx;
+  color: #9aa0a6;
+  margin-top: 6rpx;
+}
+.stats-row.data-v-9023ef44 {
+  margin-top: 32rpx;
+  padding-top: 28rpx;
+  border-top: 1rpx solid #f0f1f3;
+}
+.stat.data-v-9023ef44 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat-value.data-v-9023ef44 {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #1f2937;
+}
+.stat-label.data-v-9023ef44 {
+  font-size: 22rpx;
+  color: #9aa0a6;
+  margin-top: 8rpx;
+}
+.stat-divider.data-v-9023ef44 {
+  width: 1rpx;
+  background-color: #f0f1f3;
+}
+.text-excellent.data-v-9023ef44 {
+  color: #22c55e;
+}
+.text-good.data-v-9023ef44 {
+  color: #10b981;
+}
+.text-normal.data-v-9023ef44 {
+  color: #3b82f6;
+}
+.text-limited.data-v-9023ef44 {
+  color: #f59e0b;
+}
+
+/* ---------- 开发模式身份切换 ---------- */
+.switch-btn.data-v-9023ef44 {
+  padding: 10rpx 24rpx;
+  border-radius: 999rpx;
+  background-color: #f0f1f3;
+  flex-shrink: 0;
+}
+.switch-text.data-v-9023ef44 {
+  font-size: 23rpx;
+  color: #6b7280;
+}
+.login-prompt.data-v-9023ef44 {
+  padding: 60rpx 0;
+}
+.login-prompt-text.data-v-9023ef44 {
+  font-size: 32rpx;
+  color: #22c55e;
+  font-weight: 600;
+}
+.menu-group.data-v-9023ef44 {
+  margin: 24rpx 32rpx 0;
+  border-radius: 24rpx;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.logout-btn.data-v-9023ef44 {
+  padding: 32rpx;
+  display: flex;
+  justify-content: center;
+}
+.logout-text.data-v-9023ef44 {
+  font-size: 30rpx;
+  color: #ef4444;
+}

@@ -1,0 +1,31 @@
+{
+  "appid": "wxc9c6da82f1b21327",
+  "compileType": "miniprogram",
+  "libVersion": "3.17.4",
+  "projectname": "zhipao-uniapp",
+  "description": "智跑校园 · 校园代取小程序",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "coverView": true,
+    "es6": true,
+    "postcss": true,
+    "minified": false,
+    "enhance": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmRelationList": [],
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

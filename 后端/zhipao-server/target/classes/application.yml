@@ -1,0 +1,171 @@
+server:
+  port: ${SERVER_PORT:3000}
+  servlet:
+    # ★ 全局路由前缀 /api（与原 NestJS 的 setGlobalPrefix('api') 一致）
+    context-path: /api
+
+spring:
+  application:
+    name: zhipao-server
+
+  # ==================== MySQL ====================
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB:xyzp}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true&rewriteBatchedStatements=true
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:msr150174}
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      pool-name: ZhipaoHikariPool
+
+  # ==================== Redis ====================
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      database: ${REDIS_DB:0}
+      timeout: 5000ms
+      lettuce:
+        pool:
+          max-active: 16
+          max-idle: 8
+          min-idle: 2
+          max-wait: 3000ms
+
+  # ==================== JSON ====================
+  jackson:
+    default-property-inclusion: non_null
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+
+  # 文件上传大小（证件照/头像）
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+# ==================== MyBatis-Plus ====================
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    # 生产环境改成 org.apache.ibatis.logging.nologging.NoLoggingImpl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false
+    db-config:
+      id-type: input           # 主键由应用生成 UUID
+      logic-delete-field: deletedAt
+      logic-delete-value: NOW()
+      logic-not-delete-value: 'NULL'
+
+# ==================== 智跑校园业务配置 ====================
+zhipao:
+  # ---------- JWT ----------
+  jwt:
+    secret: ${JWT_SECRET:}
+    expire-hours: 168          # 7 天
+
+  # ---------- 信用分门槛（契约锁定） ----------
+  credit:
+    initial: 60                # 初始信用分
+    max: 100
+    accept-threshold: 60       # 接单门槛
+    publish-threshold: 50      # 发单门槛
+    freeze-threshold: 40       # 冻结门槛
+    freeze-days: 7
+
+  # ---------- 微信小程序 ----------
+  wechat:
+    app-id: ${WX_APP_ID:}
+    app-secret: ${WX_APP_SECRET:}
+    # 订阅消息模板（留空则跳过推送）
+    tmpl-order-accepted: ${WX_TMPL_ORDER_ACCEPTED:}
+    tmpl-order-delivered: ${WX_TMPL_ORDER_DELIVERED:}
+    tmpl-order-cancelled: ${WX_TMPL_ORDER_CANCELLED:}
+    tmpl-appeal-result: ${WX_TMPL_APPEAL_RESULT:}
+
+  # ---------- 腾讯位置服务 ----------
+  tencent-map:
+    key: ${TENCENT_MAP_KEY:}
+    # 地理编码接口
+    geocoder-url: https://apis.map.qq.com/ws/geocoder/v1/
+
+  # ---------- 腾讯云（短信 + OCR 共用一对密钥） ----------
+  tencent-cloud:
+    secret-id: ${TENCENT_SECRET_ID:}
+    secret-key: ${TENCENT_SECRET_KEY:}
+    # ★ 必须国内地域，境外无法扣减免费额度
+    region: ${TENCENT_REGION:ap-guangzhou}
+    sms:
+      sdk-app-id: ${TENCENT_SMS_SDK_APP_ID:}
+      sign-name: ${TENCENT_SMS_SIGN_NAME:}
+      template-id: ${TENCENT_SMS_TEMPLATE_ID:}
+    ocr:
+      enabled: ${TENCENT_OCR_ENABLED:true}
+
+  # ---------- 对象存储（留空则返回占位 URL） ----------
+  storage:
+    endpoint: ${TOS_ENDPOINT:}
+    region: ${TOS_REGION:}
+    bucket: ${TOS_BUCKET:}
+    access-key: ${TOS_ACCESS_KEY:}
+    secret-key: ${TOS_SECRET_KEY:}
+
+  # ---------- ★ 双 AI ----------
+  ai:
+    # 总开关（false 则只用规则库）
+    enabled: ${AI_ENABLED:true}
+
+    # ① 本地 AI（Ollama）—— 优先，快且数据不出内网
+    ollama:
+      base-url: ${OLLAMA_BASE_URL:}          # 如 http://localhost:11434
+      model: ${OLLAMA_MODEL:}                # 如 qwen2.5:7b
+      timeout-seconds: 30
+
+    # ② 云 AI（Coze）—— 兜底
+    #
+    # ⚠️ 当前 Token 已失效（API 返回 4100 authentication is invalid）
+    #    留空可避免每个未知问题都等 6 秒超时。
+    #
+    # 重新启用步骤：
+    #   1. https://www.coze.cn → 工作空间 → 个人访问令牌 → 生成新 Token
+    #   2. 填到下面 api-token（或用环境变量 COZE_API_TOKEN）
+    #   3. 重启后端，/api/health 的 ai 字段会变成 "local,coze"
+    #
+    # 安全提示：生产环境务必用环境变量，不要写死在文件里
+    coze:
+      base-url: ${COZE_BASE_URL:https://api.coze.cn}
+      api-token: ${COZE_API_TOKEN:}
+      bot-id: ${COZE_BOT_ID:7637945513727672363}
+      # 缩短超时，避免长时间阻塞（原 30 秒）
+      timeout-seconds: 8
+
+    # ③ 规则库兜底 —— 永远可用，不需配置
+
+  # ---------- 业务参数 ----------
+  business:
+    # 无人接单超时自动取消（分钟，超过 deadline 多久后取消）
+    auto-cancel-minutes: 30
+    # 每超时 30 分钟扣信用分
+    overdue-penalty: 2
+    # 接单后取消扣分
+    cancel-after-accept-penalty: 10
+    # OCR 每人每日上限
+    ocr-daily-limit: 5
+    # 短信每人每日上限
+    sms-daily-limit: 10
+
+# ==================== 日志 ====================
+logging:
+  level:
+    root: INFO
+    com.zhipao: DEBUG
+    # 生产环境关闭 SQL 日志
+    com.zhipao.mapper: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

@@ -1,0 +1,35 @@
+.success-box.data-v-8ee1442d {
+  background-color: #ffffff;
+  border-radius: 48rpx;
+  padding: 64rpx 80rpx;
+  flex-direction: column;
+}
+.success-icon-wrap.data-v-8ee1442d {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  background-color: #22c55e;
+}
+.success-icon.data-v-8ee1442d {
+  color: #ffffff;
+  font-size: 72rpx;
+  font-weight: bold;
+  line-height: 1;
+}
+.success-title.data-v-8ee1442d {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #1f2937;
+  margin-top: 32rpx;
+}
+.success-amount.data-v-8ee1442d {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #22c55e;
+  margin-top: 16rpx;
+}
+.success-hint.data-v-8ee1442d {
+  font-size: 24rpx;
+  color: #6b7280;
+  margin-top: 24rpx;
+}

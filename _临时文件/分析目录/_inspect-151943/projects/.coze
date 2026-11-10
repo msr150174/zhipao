@@ -1,0 +1,14 @@
+[project]
+requires = [ "nodejs-24" ]
+template = "vite"
+version = "legacy"
+appliedPatches = [ "vite/validate@0.0.20" ]
+
+[dev]
+build = [ "pnpm", "install" ]
+run = [ "pnpm", "run", "dev" ]
+validate = [ "bash", "./scripts/validate.sh" ]
+
+[deploy]
+build = [ "bash", "-c", "pnpm install && pnpm run build" ]
+run = [ "sh", "-c", "node server.mjs" ]

@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js");Math||s();const s=()=>"../../components/AppHeader.js",t=e.defineComponent({__name:"index",setup:s=>(s,t)=>({a:e.p({title:"用户协议","show-back":!0,"bg-class":"grad-brand"})})}),a=e._export_sfc(t,[["__scopeId","data-v-1c7c2643"]]);wx.createPage(a);

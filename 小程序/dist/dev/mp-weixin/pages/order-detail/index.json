@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "app-header": "../../components/AppHeader",
+    "location-map": "../../components/LocationMap",
+    "success-overlay": "../../components/SuccessOverlay"
+  }
+}

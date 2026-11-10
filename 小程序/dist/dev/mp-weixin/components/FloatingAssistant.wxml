@@ -1,0 +1,1 @@
+<view class="data-v-5036bb41" style="{{a}}" bindtouchstart="{{b}}" bindtouchmove="{{c}}" bindtouchend="{{d}}" bindtouchcancel="{{e}}"><text class="fab-icon data-v-5036bb41">💬</text></view>

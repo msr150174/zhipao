@@ -1,0 +1,17 @@
+﻿id	IFNULL(openid,'')	IFNULL(phone,'')	nickname	is_admin	status
+0392cf7161a248758d28685c78a10da4	dev_openid_a8d819a6b8b7e95684752e86		同学	0	1
+05b0776feae745388a2b22b9ba08d216	dev_openid_e27cdd3649a059cda5a68675		同学	0	1
+1a07a86eca0a40b2a6ee9b0378c80944	dev_openid_0e768eefe5adf7500dc2bd12		同学	0	1
+25c78b09fcc74449bd8bed3ef7252a96	dev_openid_default		同学	1	1
+26ad133167a244f686e8fa7ad6199ed9	dev_openid_96a9a2ed49c434a490bdb3a0		同学	0	1
+3b8851a078ef42ffa93013314faaf75c	dev_openid_74bd6bd75eeca137649ad29f		同学	0	1
+48cda97d0c504a9c8e8b62d85e74dcab	dev_openid_b		测试用户B	0	1
+4a4abb5246334487b0d5cfb0a2f333f5		13128512178	管理员	1	1
+5b6c0dbd610042f78af05acf7322f11d	dev_openid_854c699768cf1dd3ad334e46		同学	0	1
+6a4741c1a7fe425189751c0772c0069c	dev_openid_cca701858844f9ffc16c19f9		同学	0	1
+974788dd827746dbb08179acfe46b43f	dev_openid_37a8c9e514c1e84744507d87		同学	0	1
+cefa7304e196428c81918e41ca356b32	dev_openid_808426d345af124221e1791a		同学	0	1
+d105598f9d8f49a38bff3b77e3809ed0	dev_openid_58e14c3f30b984be04109867		同学	0	1
+d3816d00a0c944808361df73190814ec	dev_openid_b92fe651e51c953a0eb8115f		同学	0	1
+d4b303ce89c04f9492e1375b38a163fc	dev_openid_a		测试用户A	0	1
+e02ab26f328443c9a8961be3c63ca36b	dev_openid_c		测试用户C	0	1

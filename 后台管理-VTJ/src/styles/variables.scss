@@ -1,0 +1,53 @@
+/**
+ * 全局设计变量
+ * ----------------------------------------------------------------------------
+ * 这些 CSS 变量来自 VTJ 导出模板的约定（--brand、--space-lg 等），
+ * 页面样式大量引用它们，集中在这里定义便于统一调整。
+ */
+
+:root {
+  /* 品牌色 */
+  --brand: #22c55e;
+  --brand-600: #16a34a;
+  --brand-700: #15803d;
+  --brand-light: #dcfce7;
+
+  /* 中性色 */
+  --text-1: #1f2937;
+  --text-2: #6b7280;
+  --text-3: #9ca3af;
+
+  /* 背景与边框 */
+  --bg-page: #f5f6f8;
+  --card: #ffffff;
+  --border: #e5e7eb;
+
+  /* 圆角 */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+
+  /* 间距 */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space: 16px;
+  --space-lg: 24px;
+
+  /* 阴影与动效 */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --dur: 0.2s;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Element Plus 主色对齐品牌绿 */
+:root {
+  --el-color-primary: #22c55e;
+  --el-color-primary-light-3: #4ade80;
+  --el-color-primary-light-5: #86efac;
+  --el-color-primary-light-7: #bbf7d0;
+  --el-color-primary-light-8: #dcfce7;
+  --el-color-primary-light-9: #f0fdf4;
+  --el-color-primary-dark-2: #16a34a;
+  --el-border-radius-base: 8px;
+}

@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/index",
+    "pages/login-phone/index",
+    "pages/publish/index",
+    "pages/order-list/index",
+    "pages/order-detail/index",
+    "pages/mine/index",
+    "pages/credit/index",
+    "pages/credit-rule/index",
+    "pages/wallet/index",
+    "pages/service/index",
+    "pages/evaluate/index",
+    "pages/runner-apply/index",
+    "pages/account/index",
+    "pages/admin/index",
+    "pages/privacy/index",
+    "pages/agreement/index",
+    "pages/about/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "智跑校园",
+    "navigationBarBackgroundColor": "#22C55E",
+    "backgroundColor": "#F5F6F8"
+  },
+  "tabBar": {
+    "color": "#9AA0A6",
+    "selectedColor": "#22C55E",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/house.png",
+        "selectedIconPath": "static/tabbar/house-active.png"
+      },
+      {
+        "pagePath": "pages/order-list/index",
+        "text": "订单",
+        "iconPath": "static/tabbar/basket.png",
+        "selectedIconPath": "static/tabbar/basket-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/tabbar/user.png",
+        "selectedIconPath": "static/tabbar/user-active.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于计算你到驿站的距离、以及地图导航"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "usingComponents": {}
+}

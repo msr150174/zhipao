@@ -1,0 +1,1 @@
+"use strict";const t=require("../common/vendor.js");function e(e="light"){try{t.index.vibrateShort({type:e})}catch{}}exports.haptic=e,exports.hapticError=function(){e("heavy")},exports.hapticSuccess=function(){e("medium")},exports.refreshFeedback=function(){try{t.index.showToast({title:"已更新",icon:"none",duration:1e3})}catch{}};

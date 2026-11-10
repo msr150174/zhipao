@@ -1,0 +1,87 @@
+// ==================== 品牌主题：跑道绿（DESIGN.md） ====================
+:root {
+  --el-color-primary: #14a152;
+  --el-color-primary-light-3: #43b475;
+  --el-color-primary-light-5: #71c796;
+  --el-color-primary-light-7: #a3dbba;
+  --el-color-primary-light-8: #c4e7d2;
+  --el-color-primary-light-9: #e6f4ec;
+  --el-color-primary-dark-2: #108142;
+
+  --zp-bg: #f4f6f5;
+  --zp-sidebar-from: #0e2a1d;
+  --zp-sidebar-to: #123726;
+  --zp-urgent: #f97316;
+}
+
+// ==================== 基础 ====================
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Noto Sans CJK SC', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  color: #1f2d3d;
+  background-color: var(--zp-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+// 数字等宽对齐（金额 / 统计指标 / 表格数字）
+.money,
+.stat-value,
+.el-table td .num {
+  font-variant-numeric: tabular-nums;
+}
+
+// ==================== 通用页面结构 ====================
+.page-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 3px rgba(14, 42, 29, 0.06);
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.pager-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+// ==================== 路由切换动效（克制：只淡入淡出） ====================
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+// ==================== Element Plus 细节统一 ====================
+.el-card {
+  border-radius: 8px;
+}
+
+.el-tag {
+  border-radius: 4px;
+}

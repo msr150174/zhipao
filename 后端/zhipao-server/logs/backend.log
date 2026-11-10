@@ -1,0 +1,18 @@
+用法：java [java options...] <application> [application arguments...]
+
+其中，<application> 为以下项之一：
+  <mainclass>                执行编译的主类的 main 方法
+  -jar <jarfile>.jar         执行 JAR 档案的主类
+  -m <module>[/<mainclass>]  执行模块的主类
+  <sourcefile>.java          编译和执行源文件程序
+
+其中，主要的 java 选项包括：
+  --class-path <class path>
+    其中，<class path> 是用于搜索类文件的目录和 JAR 档案列表（以 ";" 分隔）
+  --module-path <module path>
+    其中，<module path> 是用于搜索模块的目录和 JAR 档案列表（以 ";" 分隔）
+  -version
+    将产品版本输出到错误流并退出
+
+获取有关用法的其他帮助：           java --help
+获取交互式 Java 环境：    jshell

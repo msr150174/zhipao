@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "发布需求",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "app-header": "../../components/AppHeader",
+    "location-map": "../../components/LocationMap"
+  }
+}

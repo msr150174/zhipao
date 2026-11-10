@@ -1,0 +1,71 @@
+.body.data-v-46ad2a46 {
+  padding: 24rpx 32rpx 0;
+}
+.status-card.data-v-46ad2a46 {
+  padding: 72rpx 32rpx;
+}
+.status-emoji.data-v-46ad2a46 {
+  font-size: 96rpx;
+}
+.status-title.data-v-46ad2a46 {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 24rpx;
+}
+.status-desc.data-v-46ad2a46 {
+  font-size: 25rpx;
+  color: #6b7280;
+  margin-top: 12rpx;
+  text-align: center;
+  line-height: 1.6;
+}
+.reject-card.data-v-46ad2a46 {
+  background-color: #fef3f2;
+}
+.reject-title.data-v-46ad2a46 {
+  font-size: 29rpx;
+  font-weight: 600;
+  color: #ef4444;
+}
+.reject-reason.data-v-46ad2a46 {
+  font-size: 26rpx;
+  color: #1f2937;
+  margin-top: 12rpx;
+}
+.reject-tip.data-v-46ad2a46 {
+  font-size: 23rpx;
+  color: #9aa0a6;
+  margin-top: 12rpx;
+}
+.section-title.data-v-46ad2a46 {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #1f2937;
+}
+.required.data-v-46ad2a46 {
+  color: #ef4444;
+}
+.input-ph.data-v-46ad2a46 {
+  color: #9aa0a6;
+}
+.textarea.data-v-46ad2a46 {
+  height: 160rpx;
+  width: 100%;
+}
+.req-item.data-v-46ad2a46 {
+  margin-top: 16rpx;
+  align-items: flex-start;
+}
+.req-dot.data-v-46ad2a46 {
+  color: #22c55e;
+  font-size: 30rpx;
+  margin-right: 12rpx;
+  line-height: 1.4;
+}
+.req-text.data-v-46ad2a46 {
+  font-size: 25rpx;
+  color: #6b7280;
+  flex: 1;
+  line-height: 1.6;
+}

@@ -1,0 +1,27 @@
+.nav-btn.data-v-7e01b22f {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28rpx 32rpx;
+  background-color: #ffffff;
+}
+.nav-btn.data-v-7e01b22f:active {
+  background-color: #f5f6f8;
+}
+.nav-icon.data-v-7e01b22f {
+  font-size: 36rpx;
+}
+.nav-label.data-v-7e01b22f {
+  font-size: 30rpx;
+  color: #1f2937;
+}
+.nav-value.data-v-7e01b22f {
+  font-size: 28rpx;
+  color: #6b7280;
+}
+.nav-arrow.data-v-7e01b22f {
+  font-size: 40rpx;
+  color: #9aa0a6;
+  line-height: 1;
+}

@@ -1,0 +1,25 @@
+.sk-card.data-v-2cfa55c5 {
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.06);
+}
+.sk-circle.data-v-2cfa55c5 {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+}
+.sk-line.data-v-2cfa55c5 {
+  height: 32rpx;
+  border-radius: 8rpx;
+}
+.sk-tag.data-v-2cfa55c5 {
+  width: 120rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+}
+.sk-btn.data-v-2cfa55c5 {
+  width: 180rpx;
+  height: 64rpx;
+  border-radius: 32rpx;
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "钱包",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "app-header": "../../components/AppHeader",
+    "empty-state": "../../components/EmptyState"
+  }
+}

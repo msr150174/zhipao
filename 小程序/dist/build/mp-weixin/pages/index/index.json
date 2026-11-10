@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "智跑校园",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "app-header": "../../components/AppHeader",
+    "empty-state": "../../components/EmptyState",
+    "fab-group": "../../components/FabGroup",
+    "order-card-skeleton": "../../components/OrderCardSkeleton"
+  }
+}

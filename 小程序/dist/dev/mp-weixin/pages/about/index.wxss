@@ -1,0 +1,53 @@
+.body.data-v-6b4e7e2d {
+  padding: 24rpx 32rpx 80rpx;
+}
+.center-card.data-v-6b4e7e2d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64rpx 32rpx;
+}
+.logo.data-v-6b4e7e2d {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 48rpx;
+  background-color: #e8f8ee;
+}
+.logo-emoji.data-v-6b4e7e2d {
+  font-size: 88rpx;
+}
+.app-name.data-v-6b4e7e2d {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #1f2937;
+  margin-top: 24rpx;
+}
+.app-ver.data-v-6b4e7e2d {
+  font-size: 24rpx;
+  color: #9aa0a6;
+  margin-top: 8rpx;
+}
+.app-desc.data-v-6b4e7e2d {
+  font-size: 26rpx;
+  color: #6b7280;
+  margin-top: 16rpx;
+}
+.menu-group.data-v-6b4e7e2d {
+  margin-top: 24rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.health-text.data-v-6b4e7e2d {
+  font-size: 25rpx;
+  color: #4b5563;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+.copyright.data-v-6b4e7e2d {
+  font-size: 22rpx;
+  color: #9aa0a6;
+  text-align: center;
+  margin-top: 60rpx;
+  display: block;
+}

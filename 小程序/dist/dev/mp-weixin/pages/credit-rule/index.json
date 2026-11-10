@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "信用分规则",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "app-header": "../../components/AppHeader"
+  }
+}
